@@ -1,0 +1,247 @@
+.quizmaker-container{
+    background-color: #f0f4ff;
+    margin: 55px auto;
+    padding: 30px;
+}
+
+.quizmaker-main-container{
+    max-width:50%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #e2eaff; 
+    min-height: 93vh;
+    border-radius: 20px;
+    border:2px solid #a8c6ff;
+}
+.quizmaker-heading{
+    text-align: center;
+    border-bottom: 2px solid #1e6dff;
+    margin: 40px auto;
+    font-family: 'Encode Sans SC', sans-serif;
+    color:cornflowerblue;
+}
+
+.quizmaker-title{
+    flex:1;
+}
+.quizmaker-title input{
+    width:74%;
+}
+.quizmaker-time{
+    flex:1;
+}
+.quizmaker-time input{
+    width:74%;
+}
+.quizmaker-title-time{
+    display: flex;
+    width:100%;
+    margin: 20px;  
+}
+
+input{ 
+    border-bottom:1.7px solid #1e6dff;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    background-color: #f0f4ff; 
+    padding:4px 4px;
+    margin:2px 10px;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid #1e6dff;
+}
+.quizmaker-question{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.quizmaker-question input{
+    width:100%;
+    height:35px;
+    font-size:18px;
+}
+.quizmaker-question label{
+    font-size:20px;
+}
+
+.quizmaker-question-format{
+    background-color: #f0f4ff;
+    padding:20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+.quizmaker-question-format input{
+    background-color: #f0f4ff;
+}
+
+.quizmaker-no-of-options{
+    display: flex;
+    align-items:flex-start;
+    justify-content: left;
+    margin: 20px; 
+}
+
+.quizmaker-no-of-options input{
+    width: 9%;
+    text-align: center;
+}
+ 
+.quizmaker-no-of-options label{
+    margin: 2px 0;
+    padding: 4px 0;
+}
+/* -------------CODE TO REMOVE DROPDOWN FROM NUMBER ATTRIBUTE---------------------------  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* --------------------------------------------------------------------------------------- */
+
+.quizmaker-options{
+    display: flex;
+    align-items:flex-start;
+    justify-content: left;
+    margin: 20px;  
+}
+
+.quizmaker-options span{
+    padding: 4px 0;
+    margin: 2px 0;
+}
+
+.quizmaker-option-err{
+    color: red;
+    font-size: 13px;
+    margin: 9px 0;
+}
+.quizmaker-add-question{ 
+    cursor:pointer;
+    /* margin:0 70%; */
+    border-radius: 5px;
+    background-color: #f0f4ff;
+    padding:3px 6px;   
+    position: absolute;
+    font-size: 13px;
+    right: 27%; 
+}
+.quizmaker-submit{
+    border-radius: 5px;
+    display:block;
+    background-color: #f0f4ff;
+    margin: 80px auto 50px auto;
+    padding: 5px 10px;
+    border: 1px solid #1e6dff;
+    color: #1e6dff;
+    cursor: pointer;  
+}
+.quizmaker-submit:hover{
+    background-color: #9da5ff;
+    color: white;
+}
+.quizmaker-submit:focus{
+    background-color: #6370fc;
+    color: white;
+}
+.quizmaker-no-of-questions{
+    margin:20px;
+}
+.quizmaker-no-of-questions input{
+    width: 9%;
+    text-align: center;
+}
+
+.quizmaker-no-of-options button{
+    border-radius: 5px; 
+    background-color: #6495ed;
+    color: white;
+    border: 1px solid white;
+    margin: 5px 10px;
+    padding: 2px 5px;
+    font-size: 13px;
+    cursor: pointer;  
+}
+  
+.quizmaker-question-err{
+    color:red;
+    font-size: 13px;
+}
+.quizmaker-no-of-questions button{
+    border-radius: 5px; 
+    background-color: #6495ed;
+    color: white;
+    border: 1px solid white;
+    margin: 0 10px;
+    padding: 2px 5px;
+    font-size: 13px;
+    cursor: pointer;  
+}
+.quizmaker-no-of-questions button:focus{
+    color: green;
+    background-color: #f0f4ff;
+    border: hidden;
+
+}
+@media (max-width:500px){
+    .quizmaker-container{
+        padding: 3px;
+        padding-top: 30px;
+    }
+    .quizmaker-main-container{
+        max-width: 95%;
+        padding: 10px;
+        
+    }
+
+    .quizmaker-heading h1{
+        font-size:25px;
+    }
+    .quizmaker-title-time{
+        display: block;
+        margin:10px;
+    }
+    .quizmaker-title-time label{
+        min-width: 40px;
+    }
+    .quizmaker-title{
+        margin-bottom: 7px;
+    }
+    .quizmaker-time{
+        margin-bottom: 7px;
+    }
+    .quizmaker-no-of-questions{
+        margin:10px;
+        margin-right: 0;
+    }
+    .quizmaker-no-of-questions input{
+      margin-right: 0;
+      width:60px;
+    }
+    .quizmaker-no-of-questions button{
+        margin-right: 0px;
+    }
+    .quizmaker-question { 
+        display:block;
+    }
+    .quizmaker-question-format{
+        padding:2px 0;    
+    }
+    .quizmaker-question-format input[type=text]{
+        margin: 0 ;
+        padding: 0;
+    }
+    .quizmaker-no-of-options input{
+        width: 60px;        
+    }
+    .quizmaker-no-of-options{
+        display: block;
+    } 
+    .quizmaker-no-of-options button{
+        margin: 5px 0;
+    }
+}
